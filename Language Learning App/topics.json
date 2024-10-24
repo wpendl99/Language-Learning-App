@@ -1,0 +1,666 @@
+[
+    {
+        "id": "UUID-1",
+        "name": "Basic Greetings and Farewells",
+        "lesson": "In this lesson, you'll learn basic greetings and farewells in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-1-1", "word": "Hola", "translation": "Hello"},
+            {"id": "UUID-1-2", "word": "Adiós", "translation": "Goodbye"},
+            {"id": "UUID-1-3", "word": "Buenos días", "translation": "Good morning"},
+            {"id": "UUID-1-4", "word": "Buenas tardes", "translation": "Good afternoon"},
+            {"id": "UUID-1-5", "word": "Buenas noches", "translation": "Good night"},
+            {"id": "UUID-1-6", "word": "¿Cómo estás?", "translation": "How are you?"},
+            {"id": "UUID-1-7", "word": "Estoy bien", "translation": "I am fine"},
+            {"id": "UUID-1-8", "word": "Hasta luego", "translation": "See you later"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-1-Q1",
+                "question": "What is the Spanish word for 'Hello'?",
+                "correctAnswer": "Hola",
+                "options": null
+            },
+            {
+                "id": "UUID-1-Q2",
+                "question": "What does 'Adiós' mean in English?",
+                "correctAnswer": "Goodbye",
+                "options": ["Goodbye", "Hello", "Good night", "See you later"]
+            },
+            {
+                "id": "UUID-1-Q3",
+                "question": "What is the translation of 'Buenos días'?",
+                "correctAnswer": "Good morning",
+                "options": ["Good morning", "Good afternoon", "Good night", "Hello"]
+            },
+            {
+                "id": "UUID-1-Q4",
+                "question": "Which word means 'Good night' in Spanish?",
+                "correctAnswer": "Buenas noches",
+                "options": ["Buenas noches", "Buenas tardes", "Buenos días", "Adiós"]
+            },
+            {
+                "id": "UUID-1-Q5",
+                "question": "How do you say 'How are you?' in Spanish?",
+                "correctAnswer": "¿Cómo estás?",
+                "options": null
+            },
+            {
+                "id": "UUID-1-Q6",
+                "question": "What does 'Estoy bien' mean?",
+                "correctAnswer": "I am fine",
+                "options": ["I am fine", "See you later", "Good morning", "Goodbye"]
+            },
+            {
+                "id": "UUID-1-Q7",
+                "question": "Which phrase would you use to say 'See you later'?",
+                "correctAnswer": "Hasta luego",
+                "options": null
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-2",
+        "name": "Common Phrases",
+        "lesson": "In this lesson, you'll learn some common phrases used in everyday conversations.",
+        "vocabulary": [
+            {"id": "UUID-2-1", "word": "Por favor", "translation": "Please"},
+            {"id": "UUID-2-2", "word": "Gracias", "translation": "Thank you"},
+            {"id": "UUID-2-3", "word": "De nada", "translation": "You're welcome"},
+            {"id": "UUID-2-4", "word": "Lo siento", "translation": "I'm sorry"},
+            {"id": "UUID-2-5", "word": "¿Cuánto cuesta?", "translation": "How much does it cost?"},
+            {"id": "UUID-2-6", "word": "¿Dónde está...?", "translation": "Where is...?"},
+            {"id": "UUID-2-7", "word": "Me gustaría", "translation": "I would like"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-2-Q1",
+                "question": "What is the Spanish word for 'Please'?",
+                "correctAnswer": "Por favor",
+                "options": null
+            },
+            {
+                "id": "UUID-2-Q2",
+                "question": "What does 'Gracias' mean?",
+                "correctAnswer": "Thank you",
+                "options": ["You're welcome", "Please", "Thank you", "I'm sorry"]
+            },
+            {
+                "id": "UUID-2-Q3",
+                "question": "How do you say 'You're welcome' in Spanish?",
+                "correctAnswer": "De nada",
+                "options": null
+            },
+            {
+                "id": "UUID-2-Q4",
+                "question": "What is the translation of 'Lo siento'?",
+                "correctAnswer": "I'm sorry",
+                "options": ["I'm sorry", "Thank you", "Please", "Excuse me"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-3",
+        "name": "Numbers (1-10)",
+        "lesson": "In this lesson, you'll learn how to count from 1 to 10 in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-3-1", "word": "Uno", "translation": "1"},
+            {"id": "UUID-3-2", "word": "Dos", "translation": "2"},
+            {"id": "UUID-3-3", "word": "Tres", "translation": "3"},
+            {"id": "UUID-3-4", "word": "Cuatro", "translation": "4"},
+            {"id": "UUID-3-5", "word": "Cinco", "translation": "5"},
+            {"id": "UUID-3-6", "word": "Seis", "translation": "6"},
+            {"id": "UUID-3-7", "word": "Siete", "translation": "7"},
+            {"id": "UUID-3-8", "word": "Ocho", "translation": "8"},
+            {"id": "UUID-3-9", "word": "Nueve", "translation": "9"},
+            {"id": "UUID-3-10", "word": "Diez", "translation": "10"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-3-Q1",
+                "question": "What is the Spanish word for '1'?",
+                "correctAnswer": "Uno",
+                "options": ["Uno", "Dos", "Tres", "Cuatro"]
+            },
+            {
+                "id": "UUID-3-Q2",
+                "question": "What does 'Cinco' mean in English?",
+                "correctAnswer": "5",
+                "options": ["5", "6", "4", "3"]
+            },
+            {
+                "id": "UUID-3-Q3",
+                "question": "Write the Spanish term for '8'.",
+                "correctAnswer": "Ocho",
+                "options": null
+            },
+            {
+                "id": "UUID-3-Q4",
+                "question": "Which number is 'Nueve' in English?",
+                "correctAnswer": "9",
+                "options": ["7", "8", "9", "10"]
+            },
+            {
+                "id": "UUID-3-Q5",
+                "question": "What is the translation of 'Tres'?",
+                "correctAnswer": "3",
+                "options": ["1", "2", "3", "4"]
+            },
+            {
+                "id": "UUID-3-Q6",
+                "question": "How do you say '10' in Spanish?",
+                "correctAnswer": "Diez",
+                "options": ["Diez", "Nueve", "Ocho", "Siete"]
+            },
+            {
+                "id": "UUID-3-Q7",
+                "question": "What number does 'Cuatro' represent?",
+                "correctAnswer": "4",
+                "options": ["2", "3", "4", "5"]
+            },
+            {
+                "id": "UUID-3-Q8",
+                "question": "What is the Spanish word for '7'?",
+                "correctAnswer": "Siete",
+                "options": ["Siete", "Seis", "Cinco", "Cuatro"]
+            },
+            {
+                "id": "UUID-3-Q9",
+                "question": "Which number is represented by 'Dos'?",
+                "correctAnswer": "2",
+                "options": ["1", "2", "3", "4"]
+            },
+            {
+                "id": "UUID-3-Q10",
+                "question": "How do you say '6' in Spanish?",
+                "correctAnswer": "Seis",
+                "options": ["Seis", "Siete", "Ocho", "Nueve"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-4",
+        "name": "Colors",
+        "lesson": "In this lesson, you'll learn the names of common colors in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-4-1", "word": "Rojo", "translation": "Red"},
+            {"id": "UUID-4-2", "word": "Azul", "translation": "Blue"},
+            {"id": "UUID-4-3", "word": "Verde", "translation": "Green"},
+            {"id": "UUID-4-4", "word": "Amarillo", "translation": "Yellow"},
+            {"id": "UUID-4-5", "word": "Negro", "translation": "Black"},
+            {"id": "UUID-4-6", "word": "Blanco", "translation": "White"},
+            {"id": "UUID-4-7", "word": "Naranja", "translation": "Orange"},
+            {"id": "UUID-4-8", "word": "Rosa", "translation": "Pink"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-4-Q1",
+                "question": "What is the Spanish word for 'Red'?",
+                "correctAnswer": "Rojo",
+                "options": ["Rojo", "Azul", "Verde", "Amarillo"]
+            },
+            {
+                "id": "UUID-4-Q2",
+                "question": "What does 'Azul' mean in English?",
+                "correctAnswer": "Blue",
+                "options": ["Blue", "Green", "Red", "Yellow"]
+            },
+            {
+                "id": "UUID-4-Q3",
+                "question": "Write the Spanish term for 'Green'.",
+                "correctAnswer": "Verde",
+                "options": null
+            },
+            {
+                "id": "UUID-4-Q4",
+                "question": "Which color is 'Amarillo' in English?",
+                "correctAnswer": "Yellow",
+                "options": ["Yellow", "Black", "White", "Orange"]
+            },
+            {
+                "id": "UUID-4-Q5",
+                "question": "What is the translation of 'Negro'?",
+                "correctAnswer": "Black",
+                "options": ["Black", "White", "Pink", "Blue"]
+            },
+            {
+                "id": "UUID-4-Q6",
+                "question": "How do you say 'White' in Spanish?",
+                "correctAnswer": "Blanco",
+                "options": ["Blanco", "Rosa", "Naranja", "Negro"]
+            },
+            {
+                "id": "UUID-4-Q7",
+                "question": "What color does 'Naranja' represent?",
+                "correctAnswer": "Orange",
+                "options": ["Pink", "Orange", "Yellow", "Green"]
+            },
+            {
+                "id": "UUID-4-Q8",
+                "question": "What is the Spanish word for 'Pink'?",
+                "correctAnswer": "Rosa",
+                "options": ["Rosa", "Blanco", "Rojo", "Amarillo"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-5",
+        "name": "Family Members",
+        "lesson": "In this lesson, you'll learn the names of family members in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-5-1", "word": "Madre", "translation": "Mother"},
+            {"id": "UUID-5-2", "word": "Padre", "translation": "Father"},
+            {"id": "UUID-5-3", "word": "Hermano", "translation": "Brother"},
+            {"id": "UUID-5-4", "word": "Hermana", "translation": "Sister"},
+            {"id": "UUID-5-5", "word": "Abuelo", "translation": "Grandfather"},
+            {"id": "UUID-5-6", "word": "Abuela", "translation": "Grandmother"},
+            {"id": "UUID-5-7", "word": "Tío", "translation": "Uncle"},
+            {"id": "UUID-5-8", "word": "Tía", "translation": "Aunt"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-5-Q1",
+                "question": "What is the Spanish word for 'mother'?",
+                "correctAnswer": "Madre",
+                "options": null
+            },
+            {
+                "id": "UUID-5-Q2",
+                "question": "What does 'hermana' mean in English?",
+                "correctAnswer": "Sister",
+                "options": ["Sister", "Brother", "Aunt", "Grandmother"]
+            },
+            {
+                "id": "UUID-5-Q3",
+                "question": "Write the Spanish term for 'father'.",
+                "correctAnswer": "Padre",
+                "options": null
+            },
+            {
+                "id": "UUID-5-Q4",
+                "question": "What is the translation of 'grandfather'?",
+                "correctAnswer": "Abuelo",
+                "options": ["Hermana", "Abuelo", "Tía", "Madre"]
+            },
+            {
+                "id": "UUID-5-Q5",
+                "question": "Which word means 'uncle' in Spanish?",
+                "correctAnswer": "Tío",
+                "options": ["Tío", "Sobrino", "Primo", "Abuelo"]
+            },
+            {
+                "id": "UUID-5-Q6",
+                "question": "What does 'abuela' refer to?",
+                "correctAnswer": "Grandmother",
+                "options": ["Sister", "Grandmother", "Aunt", "Daughter"]
+            },
+            {
+                "id": "UUID-5-Q7",
+                "question": "Write the Spanish word for 'brother'.",
+                "correctAnswer": "Hermano",
+                "options": null
+            },
+            {
+                "id": "UUID-5-Q8",
+                "question": "What does 'tía' mean?",
+                "correctAnswer": "Aunt",
+                "options": ["Cousin", "Aunt", "Niece", "Father"]
+            },
+            {
+                "id": "UUID-5-Q9",
+                "question": "Which term means 'nephew'?",
+                "correctAnswer": "Sobrino",
+                "options": ["Sobrina", "Sobrino", "Prima", "Hija"]
+            },
+            {
+                "id": "UUID-5-Q10",
+                "question": "What is the Spanish word for 'sister'?",
+                "correctAnswer": "Hermana",
+                "options": ["Hermano", "Madre", "Hermana", "Prima"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-6",
+        "name": "Food and Drink",
+        "lesson": "In this lesson, you'll learn vocabulary related to food and drinks in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-6-1", "word": "Agua", "translation": "Water"},
+            {"id": "UUID-6-2", "word": "Comida", "translation": "Food"},
+            {"id": "UUID-6-3", "word": "Pan", "translation": "Bread"},
+            {"id": "UUID-6-4", "word": "Fruta", "translation": "Fruit"},
+            {"id": "UUID-6-5", "word": "Carne", "translation": "Meat"},
+            {"id": "UUID-6-6", "word": "Verdura", "translation": "Vegetable"},
+            {"id": "UUID-6-7", "word": "Café", "translation": "Coffee"},
+            {"id": "UUID-6-8", "word": "Té", "translation": "Tea"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-6-Q1",
+                "question": "What is the Spanish word for 'Water'?",
+                "correctAnswer": "Agua",
+                "options": ["Agua", "Café", "Té", "Pan"]
+            },
+            {
+                "id": "UUID-6-Q2",
+                "question": "What does 'Comida' mean in English?",
+                "correctAnswer": "Food",
+                "options": ["Food", "Drink", "Bread", "Fruit"]
+            },
+            {
+                "id": "UUID-6-Q3",
+                "question": "Write the Spanish term for 'Bread'.",
+                "correctAnswer": "Pan",
+                "options": null
+            },
+            {
+                "id": "UUID-6-Q4",
+                "question": "Which word represents 'Fruit' in Spanish?",
+                "correctAnswer": "Fruta",
+                "options": ["Fruta", "Verdura", "Carne", "Agua"]
+            },
+            {
+                "id": "UUID-6-Q5",
+                "question": "What is the translation of 'Carne'?",
+                "correctAnswer": "Meat",
+                "options": ["Meat", "Vegetable", "Bread", "Tea"]
+            },
+            {
+                "id": "UUID-6-Q6",
+                "question": "How do you say 'Vegetable' in Spanish?",
+                "correctAnswer": "Verdura",
+                "options": ["Verdura", "Fruta", "Comida", "Café"]
+            },
+            {
+                "id": "UUID-6-Q7",
+                "question": "What does 'Café' mean in English?",
+                "correctAnswer": "Coffee",
+                "options": ["Coffee", "Tea", "Water", "Food"]
+            },
+            {
+                "id": "UUID-6-Q8",
+                "question": "What is the Spanish word for 'Tea'?",
+                "correctAnswer": "Té",
+                "options": ["Té", "Café", "Agua", "Pan"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-7",
+        "name": "Common Adjectives",
+        "lesson": "In this lesson, you'll learn some common adjectives in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-7-1", "word": "Grande", "translation": "Big"},
+            {"id": "UUID-7-2", "word": "Pequeño", "translation": "Small"},
+            {"id": "UUID-7-3", "word": "Bonito", "translation": "Beautiful"},
+            {"id": "UUID-7-4", "word": "Feo", "translation": "Ugly"},
+            {"id": "UUID-7-5", "word": "Feliz", "translation": "Happy"},
+            {"id": "UUID-7-6", "word": "Triste", "translation": "Sad"},
+            {"id": "UUID-7-7", "word": "Interesante", "translation": "Interesting"},
+            {"id": "UUID-7-8", "word": "Aburrido", "translation": "Boring"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-7-Q1",
+                "question": "What is the Spanish word for 'Big'?",
+                "correctAnswer": "Grande",
+                "options": ["Grande", "Pequeño", "Bonito", "Feo"]
+            },
+            {
+                "id": "UUID-7-Q2",
+                "question": "What does 'Pequeño' mean in English?",
+                "correctAnswer": "Small",
+                "options": ["Big", "Beautiful", "Small", "Ugly"]
+            },
+            {
+                "id": "UUID-7-Q3",
+                "question": "Write the Spanish term for 'Beautiful'.",
+                "correctAnswer": "Bonito",
+                "options": null
+            },
+            {
+                "id": "UUID-7-Q4",
+                "question": "Which adjective represents 'Ugly' in Spanish?",
+                "correctAnswer": "Feo",
+                "options": ["Feo", "Feliz", "Grande", "Triste"]
+            },
+            {
+                "id": "UUID-7-Q5",
+                "question": "What is the translation of 'Feliz'?",
+                "correctAnswer": "Happy",
+                "options": ["Sad", "Boring", "Happy", "Interesting"]
+            },
+            {
+                "id": "UUID-7-Q6",
+                "question": "How do you say 'Sad' in Spanish?",
+                "correctAnswer": "Triste",
+                "options": ["Triste", "Aburrido", "Interesante", "Bonito"]
+            },
+            {
+                "id": "UUID-7-Q7",
+                "question": "What does 'Interesante' mean?",
+                "correctAnswer": "Interesting",
+                "options": ["Boring", "Happy", "Ugly", "Interesting"]
+            },
+            {
+                "id": "UUID-7-Q8",
+                "question": "What is the Spanish word for 'Boring'?",
+                "correctAnswer": "Aburrido",
+                "options": ["Aburrido", "Feliz", "Triste", "Grande"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-8",
+        "name": "Days of the Week",
+        "lesson": "In this lesson, you'll learn the days of the week in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-8-1", "word": "Lunes", "translation": "Monday"},
+            {"id": "UUID-8-2", "word": "Martes", "translation": "Tuesday"},
+            {"id": "UUID-8-3", "word": "Miércoles", "translation": "Wednesday"},
+            {"id": "UUID-8-4", "word": "Jueves", "translation": "Thursday"},
+            {"id": "UUID-8-5", "word": "Viernes", "translation": "Friday"},
+            {"id": "UUID-8-6", "word": "Sábado", "translation": "Saturday"},
+            {"id": "UUID-8-7", "word": "Domingo", "translation": "Sunday"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-8-Q1",
+                "question": "What is the Spanish word for 'Monday'?",
+                "correctAnswer": "Lunes",
+                "options": ["Lunes", "Martes", "Miércoles", "Jueves"]
+            },
+            {
+                "id": "UUID-8-Q2",
+                "question": "What does 'Martes' mean in English?",
+                "correctAnswer": "Tuesday",
+                "options": ["Monday", "Tuesday", "Wednesday", "Thursday"]
+            },
+            {
+                "id": "UUID-8-Q3",
+                "question": "Write the Spanish term for 'Wednesday'.",
+                "correctAnswer": "Miércoles",
+                "options": null
+            },
+            {
+                "id": "UUID-8-Q4",
+                "question": "Which day of the week is 'Jueves' in English?",
+                "correctAnswer": "Thursday",
+                "options": ["Tuesday", "Thursday", "Friday", "Sunday"]
+            },
+            {
+                "id": "UUID-8-Q5",
+                "question": "What is the translation of 'Viernes'?",
+                "correctAnswer": "Friday",
+                "options": ["Saturday", "Sunday", "Friday", "Monday"]
+            },
+            {
+                "id": "UUID-8-Q6",
+                "question": "How do you say 'Saturday' in Spanish?",
+                "correctAnswer": "Sábado",
+                "options": ["Domingo", "Viernes", "Sábado", "Lunes"]
+            },
+            {
+                "id": "UUID-8-Q7",
+                "question": "What does 'Domingo' mean?",
+                "correctAnswer": "Sunday",
+                "options": ["Monday", "Wednesday", "Sunday", "Thursday"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-9",
+        "name": "Weather Vocabulary",
+        "lesson": "In this lesson, you'll learn common weather-related vocabulary in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-9-1", "word": "Hace sol", "translation": "It's sunny"},
+            {"id": "UUID-9-2", "word": "Hace frío", "translation": "It's cold"},
+            {"id": "UUID-9-3", "word": "Está nublado", "translation": "It's cloudy"},
+            {"id": "UUID-9-4", "word": "Llueve", "translation": "It's raining"},
+            {"id": "UUID-9-5", "word": "Nieva", "translation": "It's snowing"},
+            {"id": "UUID-9-6", "word": "Hace calor", "translation": "It's hot"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-9-Q1",
+                "question": "What is the Spanish phrase for 'It's sunny'?",
+                "correctAnswer": "Hace sol",
+                "options": ["Hace sol", "Está nublado", "Llueve", "Hace frío"]
+            },
+            {
+                "id": "UUID-9-Q2",
+                "question": "What does 'Hace frío' mean in English?",
+                "correctAnswer": "It's cold",
+                "options": ["It's cold", "It's hot", "It's cloudy", "It's raining"]
+            },
+            {
+                "id": "UUID-9-Q3",
+                "question": "Write the Spanish phrase for 'It's cloudy'.",
+                "correctAnswer": "Está nublado",
+                "options": null
+            },
+            {
+                "id": "UUID-9-Q4",
+                "question": "Which weather condition does 'Llueve' represent?",
+                "correctAnswer": "It's raining",
+                "options": ["It's snowing", "It's raining", "It's sunny", "It's hot"]
+            },
+            {
+                "id": "UUID-9-Q5",
+                "question": "What is the translation of 'Nieva'?",
+                "correctAnswer": "It's snowing",
+                "options": ["It's raining", "It's sunny", "It's snowing", "It's cold"]
+            },
+            {
+                "id": "UUID-9-Q6",
+                "question": "How do you say 'It's hot' in Spanish?",
+                "correctAnswer": "Hace calor",
+                "options": ["Hace frío", "Hace calor", "Hace sol", "Está nublado"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    },
+    {
+        "id": "UUID-10",
+        "name": "Common Verbs",
+        "lesson": "In this lesson, you'll learn some common verbs in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-10-1", "word": "Ser", "translation": "To be"},
+            {"id": "UUID-10-2", "word": "Estar", "translation": "To be"},
+            {"id": "UUID-10-3", "word": "Tener", "translation": "To have"},
+            {"id": "UUID-10-4", "word": "Hacer", "translation": "To do/make"},
+            {"id": "UUID-10-5", "word": "Ir", "translation": "To go"},
+            {"id": "UUID-10-6", "word": "Comer", "translation": "To eat"},
+            {"id": "UUID-10-7", "word": "Beber", "translation": "To drink"},
+            {"id": "UUID-10-8", "word": "Hablar", "translation": "To speak"}
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-10-Q1",
+                "question": "What is the Spanish verb for 'To be' (permanent)?",
+                "correctAnswer": "Ser",
+                "options": ["Ser", "Estar", "Tener", "Hacer"]
+            },
+            {
+                "id": "UUID-10-Q2",
+                "question": "What does 'Estar' mean in English?",
+                "correctAnswer": "To be",
+                "options": ["To be", "To go", "To speak", "To drink"]
+            },
+            {
+                "id": "UUID-10-Q3",
+                "question": "Write the Spanish verb for 'To have'.",
+                "correctAnswer": "Tener",
+                "options": null
+            },
+            {
+                "id": "UUID-10-Q4",
+                "question": "Which verb represents 'To do/make' in Spanish?",
+                "correctAnswer": "Hacer",
+                "options": ["Hacer", "Comer", "Beber", "Ir"]
+            },
+            {
+                "id": "UUID-10-Q5",
+                "question": "What is the translation of 'Ir'?",
+                "correctAnswer": "To go",
+                "options": ["To speak", "To eat", "To go", "To have"]
+            },
+            {
+                "id": "UUID-10-Q6",
+                "question": "How do you say 'To eat' in Spanish?",
+                "correctAnswer": "Comer",
+                "options": ["Beber", "Comer", "Hacer", "Hablar"]
+            },
+            {
+                "id": "UUID-10-Q7",
+                "question": "What does 'Beber' mean in English?",
+                "correctAnswer": "To drink",
+                "options": ["To eat", "To drink", "To go", "To speak"]
+            },
+            {
+                "id": "UUID-10-Q8",
+                "question": "What is the Spanish verb for 'To speak'?",
+                "correctAnswer": "Hablar",
+                "options": ["Hablar", "Tener", "Ser", "Ir"]
+            }
+        ],
+        "isLessonRead": false,
+        "isFlashcardsCompleted": false,
+        "isQuizCompleted": false,
+        "highScore": 0
+    }
+]
