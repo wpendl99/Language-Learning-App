@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct LessonView: View {
     let topic: Topic
+    @State private var webViewHeight: CGFloat = .zero
         
     var body: some View {
         ScrollView {
-            Text(topic.lesson)
-                .padding()
+            WebView(dynamicHeight: $webViewHeight, htmlContent: topic.lesson)
+                .frame(height: webViewHeight)
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
