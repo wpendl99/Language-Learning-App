@@ -20,27 +20,42 @@ struct QuizView: View {
     @State private var answerSubmitted = false
     @State private var selectedOption: String = ""
     @State private var userAnswer: String = ""
+    @State private var showConfetti: Bool = false
+    @State private var didCompleteQuiz: Bool = false
+    @State private var showGlow = false
+    @State private var glowColor: Color = .clear
     
     var body: some View {
-        VStack(alignment: .center) {
-                if startQuiz {
-                    quizContent
-                } else {
-                    quizIntroduction
-                }
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    if !startQuiz || showResult {
-                        Text("Quiz Completed: \(ProgressManager.shared.isQuizCompleted(for: topic.id) ? "✅" : "❌")")
+        ZStack {
+                VStack(alignment: .center) {
+                    if startQuiz {
+                        quizContent
+                    } else {
+                        quizIntroduction
                     }
                 }
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        if !startQuiz || showResult {
+                            Text("Quiz Completed: \(ProgressManager.shared.isQuizCompleted(for: topic.id) ? "✅" : "❌")")
+                        }
+                    }
+                }
+                .onAppear {
+                    resetQuiz()
+                }
+                .ignoresSafeArea(.all)
+                
+                if showGlow {
+                    RoundedRectangle(cornerSize: CGSize(width: 50, height: 50))
+                        .stroke(glowColor, lineWidth: 20)
+                        .blur(radius: 10)
+                        .opacity(0.8)
+                        .transition(.opacity)
+                        .ignoresSafeArea()
+                }
             }
-            .onAppear {
-                resetQuiz()
-            }
-            .ignoresSafeArea(.all)
         }
 
     
@@ -148,27 +163,30 @@ struct QuizView: View {
                     .padding()
                     .accentColor(.blue)
             } else {
-                if (correctAnswerCount == topic.quizQuestions.count) {
-                    Text("Quiz Completed!")
-                        .font(.largeTitle)
+                Group {
+                    if (didCompleteQuiz) {
+                        Text("Quiz Completed!")
+                            .font(.largeTitle)
+                            .padding()
+                    } else {
+                        Text("Try Again!")
+                            .font(.largeTitle)
+                            .padding()
+                    }
+                    
+                    Text("Correct Answers \(correctAnswerCount) / \(topic.quizQuestions.count)")
+                        .font(.title)
                         .padding()
-                } else {
-                    Text("Try Again!")
-                        .font(.largeTitle)
+                    
+                    Text("Your Score: \(score)")
+                        .font(.title)
                         .padding()
+                    
+                    Button("Finish") {
+                        completeQuiz()
+                    }
                 }
-                
-                Text("Correct Answers \(correctAnswerCount) / \(topic.quizQuestions.count)")
-                    .font(.title)
-                    .padding()
-                
-                Text("Your Score: \(score)")
-                    .font(.title)
-                    .padding()
-                
-                Button("Finish") {
-                    completeQuiz()
-                }
+                .displayConfetti(isActive: $showConfetti)
             }
         }
     }
@@ -185,13 +203,7 @@ struct QuizView: View {
     }
     
     private func completeQuiz() {
-        if correctAnswerCount == topic.quizQuestions.count {
-            ProgressManager.shared.setQuizCompleted(true, for: topic.id)
-        }
-        let highScore = ProgressManager.shared.highScore(for: topic.id)
-        if score > highScore {
-            ProgressManager.shared.setHighScore(score, for: topic.id)
-        }
+        // idk? go back a screen?
     }
     
     // MARK: - Timer Methods
@@ -242,10 +254,24 @@ struct QuizView: View {
             let totalScore = 10 + bonus
             score += totalScore
             playCorrectSound()
+            triggerGlowEffect(isCorrect: true)
         } else {
             playIncorrectSound()
+            triggerGlowEffect(isCorrect: false)
         }
     }
+    
+    func triggerGlowEffect(isCorrect: Bool) {
+            glowColor = isCorrect ? .green : .red
+            withAnimation(.easeInOut(duration: 0.15)) {
+                showGlow = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                withAnimation(.easeInOut(duration: 0.15)) {
+                    showGlow = false
+                }
+            }
+        }
     
     func nextQuestion() {
         currentQuestionIndex += 1
@@ -257,7 +283,11 @@ struct QuizView: View {
         if currentQuestionIndex < topic.quizQuestions.count {
             startTimer()
         } else {
-            ProgressManager.shared.setQuizCompleted(true, for: topic.id)
+            if correctAnswerCount == topic.quizQuestions.count {
+                ProgressManager.shared.setQuizCompleted(true, for: topic.id)
+                didCompleteQuiz = true
+                showConfetti = true
+            }
             let highScore = ProgressManager.shared.highScore(for: topic.id)
             if score > highScore {
                 ProgressManager.shared.setHighScore(score, for: topic.id)

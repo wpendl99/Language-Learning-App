@@ -77,6 +77,6 @@ struct FlashcardsView: View {
     }
 }
 
-//#Preview {
-//    FlashcardsView()
-//}
+#Preview {
+    FlashcardsView(topic: SampleData.sampleTopic)
+}
