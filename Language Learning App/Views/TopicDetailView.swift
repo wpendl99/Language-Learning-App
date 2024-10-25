@@ -33,7 +33,7 @@ struct TopicDetailView: View {
                 )
             }
             
-            NavigationLink(destination: QuizView(topic: topic)) {
+            NavigationLink(destination: QuizView(viewModel: QuizViewModel(topic: topic))) {
                 OptionButton(
                     title: "Take Quiz",
                     completed: ProgressManager.shared.isQuizCompleted(for: topic.id)
