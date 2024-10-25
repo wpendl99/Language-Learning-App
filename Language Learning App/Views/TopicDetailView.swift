@@ -8,30 +8,46 @@
 import SwiftUI
 
 struct TopicDetailView: View {
+    @ObservedObject var progressManager = ProgressManager.shared
     @State var topic: Topic
     
     var body: some View {
         VStack(spacing: 20) {
             Text(topic.name)
                 .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .bold()
                 .padding()
             
-            NavigationLink(destination: LessonView(topic: $topic)) {
-                OptionButton(title: "Read Lesson", completed: topic.isLessonRead)
+            NavigationLink(destination: LessonView(topic: topic)) {
+                OptionButton(
+                    title: "Read Lesson",
+                    completed: ProgressManager.shared.isLessonRead(for: topic.id)
+                )
             }
             
-            NavigationLink(destination: FlashcardsView(topic: $topic)) {
-                OptionButton(title: "Practice Flashcards", completed: topic.isFlashcardsCompleted)
+            NavigationLink(destination: FlashcardsView(topic: topic)) {
+                OptionButton(
+                    title: "Practice Flashcards",
+                    completed: ProgressManager.shared.isFlashcardsCompleted(for: topic.id)
+                )
             }
             
-            NavigationLink(destination: QuizView(topic: $topic)) {
-                OptionButton(title: "Take Quiz", completed: topic.isQuizCompleted)
+            NavigationLink(destination: QuizView(topic: topic)) {
+                OptionButton(
+                    title: "Take Quiz",
+                    completed: ProgressManager.shared.isQuizCompleted(for: topic.id)
+                )
             }
             
             Spacer()
         }
-        .navigationTitle(topic.name)
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            if progressManager.didChangeFlag {
+                progressManager.resetDidChangeFlag()
+            }
+        }
     }
 }
 
@@ -58,6 +74,6 @@ struct OptionButton: View {
     }
 }
 
-//#Preview {
-//    TopicDetailView()
-//}
+#Preview {
+    TopicDetailView(topic: SampleData.sampleTopic)
+}

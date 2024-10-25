@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Language_Learning_AppApp: App {
+struct Language_Learning_App: App {
     var body: some Scene {
         WindowGroup {
             TopicsListView()

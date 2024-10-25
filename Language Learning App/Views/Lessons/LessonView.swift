@@ -10,23 +10,25 @@ import SwiftUI
 import SwiftUI
 
 struct LessonView: View {
-    @Binding var topic: Topic
-    
+    let topic: Topic
+        
     var body: some View {
         ScrollView {
             Text(topic.lesson)
                 .padding()
         }
-        .navigationTitle("Lesson")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            topic.isLessonRead = true
-            // Save progress if needed
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Toggle(isOn: ProgressManager.shared.lessonBinding(for: topic.id)) {
+                    Text("Completed")
+                }.toggleStyle(.switch)
+            }
         }
     }
 }
 
 
-//#Preview {
-//    LessonView()
-//}
+#Preview {
+    LessonView(topic: SampleData.sampleTopic)
+}

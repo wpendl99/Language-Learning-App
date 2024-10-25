@@ -13,9 +13,4 @@ struct Topic: Identifiable, Codable {
     let lesson: String
     let vocabulary: [VocabularyTerm]
     let quizQuestions: [QuizQuestion]
-    
-    var isLessonRead: Bool = false
-    var isFlashcardsCompleted: Bool = false
-    var isQuizCompleted: Bool = false
-    var highScore: Int = 0
 }

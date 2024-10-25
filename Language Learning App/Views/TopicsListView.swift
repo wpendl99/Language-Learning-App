@@ -19,7 +19,9 @@ struct TopicsListView: View {
                             Text(topic.name)
                                 .font(.headline)
                             Spacer()
-                            if topic.isLessonRead && topic.isFlashcardsCompleted && topic.isQuizCompleted {
+                            if ProgressManager.shared.isLessonRead(for: topic.id) &&
+                                ProgressManager.shared.isFlashcardsCompleted(for: topic.id) &&
+                                ProgressManager.shared.isQuizCompleted(for: topic.id) {
                                 Image(systemName: "checkmark.seal.fill")
                                     .foregroundColor(.green)
                             }

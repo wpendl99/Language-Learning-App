@@ -1,5 +1,29 @@
 [
     {
+        "id": "UUID-0",
+        "name": "Super Simple (REMOVE FROM PROD)",
+        "lesson": "In this lesson, you'll learn basic greetings and farewells in Spanish.",
+        "vocabulary": [
+            {"id": "UUID-1-1", "word": "Hola", "translation": "Hello"},
+            {"id": "UUID-1-2", "word": "Adiós", "translation": "Goodbye"},
+            {"id": "UUID-1-3", "word": "Buenos días", "translation": "Good morning"},
+        ],
+        "quizQuestions": [
+            {
+                "id": "UUID-1-Q1",
+                "question": "What is the Spanish word for 'Hello'?",
+                "correctAnswer": "Hola",
+                "options": null
+            },
+            {
+                "id": "UUID-1-Q2",
+                "question": "What does 'Adiós' mean in English?",
+                "correctAnswer": "Goodbye",
+                "options": ["Goodbye", "Hello", "Good night", "See you later"]
+            }
+        ]
+    },
+    {
         "id": "UUID-1",
         "name": "Basic Greetings and Farewells",
         "lesson": "In this lesson, you'll learn basic greetings and farewells in Spanish.",
@@ -56,11 +80,7 @@
                 "correctAnswer": "Hasta luego",
                 "options": null
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-2",
@@ -100,11 +120,7 @@
                 "correctAnswer": "I'm sorry",
                 "options": ["I'm sorry", "Thank you", "Please", "Excuse me"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-3",
@@ -183,11 +199,7 @@
                 "correctAnswer": "Seis",
                 "options": ["Seis", "Siete", "Ocho", "Nueve"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-4",
@@ -252,11 +264,7 @@
                 "correctAnswer": "Rosa",
                 "options": ["Rosa", "Blanco", "Rojo", "Amarillo"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-5",
@@ -333,11 +341,7 @@
                 "correctAnswer": "Hermana",
                 "options": ["Hermano", "Madre", "Hermana", "Prima"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-6",
@@ -402,11 +406,7 @@
                 "correctAnswer": "Té",
                 "options": ["Té", "Café", "Agua", "Pan"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-7",
@@ -471,11 +471,7 @@
                 "correctAnswer": "Aburrido",
                 "options": ["Aburrido", "Feliz", "Triste", "Grande"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-8",
@@ -533,11 +529,7 @@
                 "correctAnswer": "Sunday",
                 "options": ["Monday", "Wednesday", "Sunday", "Thursday"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-9",
@@ -588,11 +580,7 @@
                 "correctAnswer": "Hace calor",
                 "options": ["Hace frío", "Hace calor", "Hace sol", "Está nublado"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     },
     {
         "id": "UUID-10",
@@ -657,10 +645,6 @@
                 "correctAnswer": "Hablar",
                 "options": ["Hablar", "Tener", "Ser", "Ir"]
             }
-        ],
-        "isLessonRead": false,
-        "isFlashcardsCompleted": false,
-        "isQuizCompleted": false,
-        "highScore": 0
+        ]
     }
 ]
