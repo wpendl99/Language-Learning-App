@@ -10,5 +10,6 @@ import Foundation
 struct VocabularyTerm: Identifiable, Codable {
     let id: String
     let word: String
+    let phonetic: String
     let translation: String
 }

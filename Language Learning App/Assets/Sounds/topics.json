@@ -4,9 +4,9 @@
         "name": "Super Simple (REMOVE FROM PROD)",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px; /* Increased base font size for better readability */            }            h1 {                font-size: 28px; /* Larger font size for headings */                color: #333;            }            p {                font-size: 18px; /* Consistent font size for paragraphs */                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .important {                color: #d9534f;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Introduction to Spanish Grammar</h1>        <p>Welcome to this lesson on <strong>Spanish grammar basics</strong>. In this lesson, you'll learn about:</p>        <ul>            <li>Nouns and gender</li>            <li>Verb conjugation</li>            <li>Common phrases</li>        </ul>        <p>In Spanish, nouns are classified by <span class='important'>gender</span> (masculine or feminine). For example:</p>        <ul>            <li><strong>El libro</strong> (The book) - masculine</li>            <li><strong>La mesa</strong> (The table) - feminine</li>        </ul>        <p>Understanding verb conjugation is also important. Here are some examples:</p>        <ul>            <li><strong>Yo hablo</strong> (I speak)</li>            <li><strong>Tú hablas</strong> (You speak)</li>            <li><strong>Él/Ella habla</strong> (He/She speaks)</li>        </ul>        <p>Practice these basic phrases to get started:</p>        <ul>            <li><strong>Hola</strong> - Hello</li>            <li><strong>Gracias</strong> - Thank you</li>            <li><strong>Por favor</strong> - Please</li>        </ul>        <p>Good luck, and remember to practice!</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-1-1", "word": "Hola", "translation": "Hello"},
-            {"id": "UUID-1-2", "word": "Adiós", "translation": "Goodbye"},
-            {"id": "UUID-1-3", "word": "Buenos días", "translation": "Good morning"},
+            {"id": "UUID-1-1", "word": "Hola", "phonetic": "OH-lah", "translation": "Hello"},
+            {"id": "UUID-1-2", "word": "Adiós", "phonetic": "ah-dee-OHS", "translation": "Goodbye"},
+            {"id": "UUID-1-3", "word": "Buenos días", "phonetic": "BWEH-nohs DEE-ahs", "translation": "Good morning"},
         ],
         "quizQuestions": [
             {
@@ -28,14 +28,14 @@
         "name": "Basic Greetings and Farewells",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Basic Greetings and Farewells</h1>        <p>In this lesson, you'll learn how to greet people and say goodbye in Spanish. These basic greetings and farewells are essential for starting any conversation and are commonly used in everyday interactions.</p>        <h2>Common Greetings</h2>        <p>Spanish greetings often vary depending on the time of day or the level of formality:</p>        <ul>            <li><span class='vocabulary'>Hola</span> - A general greeting that means 'Hello' and can be used at any time of the day.</li>            <li><span class='vocabulary'>Buenos días</span> - Used to say 'Good morning' before noon.</li>            <li><span class='vocabulary'>Buenas tardes</span> - Used to say 'Good afternoon' from noon until evening.</li>            <li><span class='vocabulary'>Buenas noches</span> - Used to say 'Good night' or 'Good evening' once it gets dark.</li>        </ul>        <h2>Asking How Someone Is</h2>        <p>After greeting someone, it is polite to ask how they are doing. The most common phrase is:</p>        <ul>            <li><span class='vocabulary'>¿Cómo estás?</span> - This means 'How are you?' and is used in informal settings.</li>            <li><span class='vocabulary'>¿Cómo está usted?</span> - A more formal way to ask 'How are you?'</li>        </ul>        <h2>Responding to Greetings</h2>        <p>Here are some simple responses you can use when someone asks how you are:</p>        <ul>            <li><span class='vocabulary'>Estoy bien</span> - 'I am fine.'</li>            <li><span class='vocabulary'>Muy bien, gracias</span> - 'Very well, thank you.'</li>        </ul>        <h2>Farewells</h2>        <p>Saying goodbye can vary depending on how formal or informal you want to be:</p>        <ul>            <li><span class='vocabulary'>Adiós</span> - The most common way to say 'Goodbye.'</li>            <li><span class='vocabulary'>Hasta luego</span> - Means 'See you later' and is used when you expect to see the person again soon.</li>            <li><span class='vocabulary'>Hasta mañana</span> - Means 'See you tomorrow.'</li>        </ul>        <p>Practice using these phrases in conversations to become more comfortable with greetings and farewells in Spanish.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-1-1", "word": "Hola", "translation": "Hello"},
-            {"id": "UUID-1-2", "word": "Adiós", "translation": "Goodbye"},
-            {"id": "UUID-1-3", "word": "Buenos días", "translation": "Good morning"},
-            {"id": "UUID-1-4", "word": "Buenas tardes", "translation": "Good afternoon"},
-            {"id": "UUID-1-5", "word": "Buenas noches", "translation": "Good night"},
-            {"id": "UUID-1-6", "word": "¿Cómo estás?", "translation": "How are you?"},
-            {"id": "UUID-1-7", "word": "Estoy bien", "translation": "I am fine"},
-            {"id": "UUID-1-8", "word": "Hasta luego", "translation": "See you later"}
+            {"id": "UUID-1-1", "word": "Hola", "phonetic": "OH-lah", "translation": "Hello"},
+            {"id": "UUID-1-2", "word": "Adiós", "phonetic": "ah-dee-OHS", "translation": "Goodbye"},
+            {"id": "UUID-1-3", "word": "Buenos días", "phonetic": "BWEH-nohs DEE-ahs", "translation": "Good morning"},
+            {"id": "UUID-1-4", "word": "Buenas tardes", "phonetic": "BWEH-nahs TAR-des", "translation": "Good afternoon"},
+            {"id": "UUID-1-5", "word": "Buenas noches", "phonetic": "BWEH-nahs NOH-ches", "translation": "Good night"},
+            {"id": "UUID-1-6", "word": "¿Cómo estás?", "phonetic": "KOH-moh es-TAHS", "translation": "How are you?"},
+            {"id": "UUID-1-7", "word": "Estoy bien", "phonetic": "es-TOY bee-EN", "translation": "I am fine"},
+            {"id": "UUID-1-8", "word": "Hasta luego", "phonetic": "AHS-tah loo-EH-goh", "translation": "See you later"}
         ],
         "quizQuestions": [
             {
@@ -87,13 +87,13 @@
         "name": "Common Phrases",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Common Phrases</h1>        <p>In this lesson, you'll learn some everyday phrases that are commonly used in conversations. These phrases are essential for being polite and getting around in Spanish-speaking environments.</p>        <h2>Politeness Phrases</h2>        <p>Politeness is very important in Spanish-speaking cultures. Here are some phrases to help you show respect and courtesy:</p>        <ul>            <li><span class='vocabulary'>Por favor</span> - 'Please.' Use this to make requests more polite.</li>            <li><span class='vocabulary'>Gracias</span> - 'Thank you.' Always a good response after someone helps you.</li>            <li><span class='vocabulary'>De nada</span> - 'You're welcome.' Use this when someone thanks you.</li>            <li><span class='vocabulary'>Lo siento</span> - 'I'm sorry.' Use this to apologize or express sympathy.</li>        </ul>        <h2>Useful Phrases for Everyday Situations</h2>        <p>These phrases will help you navigate common situations such as shopping or asking for directions:</p>        <ul>            <li><span class='vocabulary'>¿Cuánto cuesta?</span> - 'How much does it cost?' Use this when shopping or inquiring about prices.</li>            <li><span class='vocabulary'>¿Dónde está...?</span> - 'Where is...?' A useful question for asking directions.</li>            <li><span class='vocabulary'>Me gustaría...</span> - 'I would like...' Use this phrase when ordering food or expressing a desire.</li>        </ul>        <p>Practicing these phrases will help you feel more comfortable in everyday interactions and allow you to communicate effectively in a variety of situations.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-2-1", "word": "Por favor", "translation": "Please"},
-            {"id": "UUID-2-2", "word": "Gracias", "translation": "Thank you"},
-            {"id": "UUID-2-3", "word": "De nada", "translation": "You're welcome"},
-            {"id": "UUID-2-4", "word": "Lo siento", "translation": "I'm sorry"},
-            {"id": "UUID-2-5", "word": "¿Cuánto cuesta?", "translation": "How much does it cost?"},
-            {"id": "UUID-2-6", "word": "¿Dónde está...?", "translation": "Where is...?"},
-            {"id": "UUID-2-7", "word": "Me gustaría", "translation": "I would like"}
+            {"id": "UUID-2-1", "word": "Por favor", "phonetic": "pohr fah-BOHR", "translation": "Please"},
+            {"id": "UUID-2-2", "word": "Gracias", "phonetic": "GRAH-syahs", "translation": "Thank you"},
+            {"id": "UUID-2-3", "word": "De nada", "phonetic": "deh NAH-dah", "translation": "You're welcome"},
+            {"id": "UUID-2-4", "word": "Lo siento", "phonetic": "loh SYEN-toh", "translation": "I'm sorry"},
+            {"id": "UUID-2-5", "word": "¿Cuánto cuesta?", "phonetic": "KWAHN-toh KWEHS-tah", "translation": "How much does it cost?"},
+            {"id": "UUID-2-6", "word": "¿Dónde está...?", "phonetic": "DOHN-deh es-TAH", "translation": "Where is...?"},
+            {"id": "UUID-2-7", "word": "Me gustaría", "phonetic": "meh goos-tah-REE-ah", "translation": "I would like"}
         ],
         "quizQuestions": [
             {
@@ -127,16 +127,16 @@
         "name": "Numbers (1-10)",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Numbers (1-10)</h1>        <p>In this lesson, you'll learn how to count from 1 to 10 in Spanish. Knowing how to count is fundamental for many everyday tasks, such as shopping, telling time, and describing quantities.</p>        <h2>Counting from 1 to 10</h2>        <p>Here are the numbers from 1 to 10 in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Uno</span> - 1</li>            <li><span class='vocabulary'>Dos</span> - 2</li>            <li><span class='vocabulary'>Tres</span> - 3</li>            <li><span class='vocabulary'>Cuatro</span> - 4</li>            <li><span class='vocabulary'>Cinco</span> - 5</li>            <li><span class='vocabulary'>Seis</span> - 6</li>            <li><span class='vocabulary'>Siete</span> - 7</li>            <li><span class='vocabulary'>Ocho</span> - 8</li>            <li><span class='vocabulary'>Nueve</span> - 9</li>            <li><span class='vocabulary'>Diez</span> - 10</li>        </ul>        <h2>Usage Tips</h2>        <p>When counting objects or people, the number can change depending on the gender of the noun it describes. For example, <span class='vocabulary'>un</span> (short for <span class='vocabulary'>uno</span>) is used before masculine nouns, and <span class='vocabulary'>una</span> before feminine nouns.</p>        <p>Practice counting different items around you to get comfortable with using numbers in Spanish.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-3-1", "word": "Uno", "translation": "1"},
-            {"id": "UUID-3-2", "word": "Dos", "translation": "2"},
-            {"id": "UUID-3-3", "word": "Tres", "translation": "3"},
-            {"id": "UUID-3-4", "word": "Cuatro", "translation": "4"},
-            {"id": "UUID-3-5", "word": "Cinco", "translation": "5"},
-            {"id": "UUID-3-6", "word": "Seis", "translation": "6"},
-            {"id": "UUID-3-7", "word": "Siete", "translation": "7"},
-            {"id": "UUID-3-8", "word": "Ocho", "translation": "8"},
-            {"id": "UUID-3-9", "word": "Nueve", "translation": "9"},
-            {"id": "UUID-3-10", "word": "Diez", "translation": "10"}
+            {"id": "UUID-3-1", "word": "Uno", "phonetic": "OO-noh", "translation": "1"},
+            {"id": "UUID-3-2", "word": "Dos", "phonetic": "DOHS", "translation": "2"},
+            {"id": "UUID-3-3", "word": "Tres", "phonetic": "TRES", "translation": "3"},
+            {"id": "UUID-3-4", "word": "Cuatro", "phonetic": "KWAH-troh", "translation": "4"},
+            {"id": "UUID-3-5", "word": "Cinco", "phonetic": "SEEN-koh", "translation": "5"},
+            {"id": "UUID-3-6", "word": "Seis", "phonetic": "SAYS", "translation": "6"},
+            {"id": "UUID-3-7", "word": "Siete", "phonetic": "SYEH-teh", "translation": "7"},
+            {"id": "UUID-3-8", "word": "Ocho", "phonetic": "OH-choh", "translation": "8"},
+            {"id": "UUID-3-9", "word": "Nueve", "phonetic": "NWAY-veh", "translation": "9"},
+            {"id": "UUID-3-10", "word": "Diez", "phonetic": "DYESS", "translation": "10"}
         ],
         "quizQuestions": [
             {
@@ -206,14 +206,14 @@
         "name": "Colors",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Colors</h1>        <p>In this lesson, you'll learn the names of common colors in Spanish. Being able to describe colors is helpful for shopping, giving directions, and describing objects.</p>        <h2>Basic Colors</h2>        <p>Here are some common colors in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Rojo</span> - Red</li>            <li><span class='vocabulary'>Azul</span> - Blue</li>            <li><span class='vocabulary'>Verde</span> - Green</li>            <li><span class='vocabulary'>Amarillo</span> - Yellow</li>            <li><span class='vocabulary'>Negro</span> - Black</li>            <li><span class='vocabulary'>Blanco</span> - White</li>            <li><span class='vocabulary'>Naranja</span> - Orange</li>            <li><span class='vocabulary'>Rosa</span> - Pink</li>        </ul>        <h2>Using Colors in Sentences</h2>        <p>In Spanish, color adjectives usually come after the noun they describe. For example, <span class='vocabulary'>coche rojo</span> means 'red car,' and <span class='vocabulary'>camisa blanca</span> means 'white shirt.'</p>        <p>Additionally, some colors can change their form depending on the gender of the noun. For example, <span class='vocabulary'>blanco</span> becomes <span class='vocabulary'>blanca</span> when describing a feminine noun.</p>        <p>Practice using colors to describe objects around you and pay attention to gender agreement.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-4-1", "word": "Rojo", "translation": "Red"},
-            {"id": "UUID-4-2", "word": "Azul", "translation": "Blue"},
-            {"id": "UUID-4-3", "word": "Verde", "translation": "Green"},
-            {"id": "UUID-4-4", "word": "Amarillo", "translation": "Yellow"},
-            {"id": "UUID-4-5", "word": "Negro", "translation": "Black"},
-            {"id": "UUID-4-6", "word": "Blanco", "translation": "White"},
-            {"id": "UUID-4-7", "word": "Naranja", "translation": "Orange"},
-            {"id": "UUID-4-8", "word": "Rosa", "translation": "Pink"}
+            {"id": "UUID-4-1", "word": "Rojo", "phonetic": "ROH-hoh", "translation": "Red"},
+            {"id": "UUID-4-2", "word": "Azul", "phonetic": "ah-SOOL", "translation": "Blue"},
+            {"id": "UUID-4-3", "word": "Verde", "phonetic": "VER-deh", "translation": "Green"},
+            {"id": "UUID-4-4", "word": "Amarillo", "phonetic": "ah-mah-REE-yoh", "translation": "Yellow"},
+            {"id": "UUID-4-5", "word": "Negro", "phonetic": "NEH-groh", "translation": "Black"},
+            {"id": "UUID-4-6", "word": "Blanco", "phonetic": "BLAHN-koh", "translation": "White"},
+            {"id": "UUID-4-7", "word": "Naranja", "phonetic": "nah-RAHN-hah", "translation": "Orange"},
+            {"id": "UUID-4-8", "word": "Rosa", "phonetic": "ROH-sah", "translation": "Pink"}
         ],
         "quizQuestions": [
             {
@@ -271,14 +271,14 @@
         "name": "Family Members",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Family Members</h1>        <p>In this lesson, you'll learn the names of family members in Spanish. Knowing how to talk about family is an essential part of everyday conversations and helps you connect with others on a personal level.</p>        <h2>Basic Family Vocabulary</h2>        <p>Here are some common family terms in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Madre</span> - Mother</li>            <li><span class='vocabulary'>Padre</span> - Father</li>            <li><span class='vocabulary'>Hermano</span> - Brother</li>            <li><span class='vocabulary'>Hermana</span> - Sister</li>            <li><span class='vocabulary'>Abuelo</span> - Grandfather</li>            <li><span class='vocabulary'>Abuela</span> - Grandmother</li>            <li><span class='vocabulary'>Tío</span> - Uncle</li>            <li><span class='vocabulary'>Tía</span> - Aunt</li>        </ul>        <h2>Additional Family Terms</h2>        <p>Besides immediate family, you may also encounter terms for extended family members. For example:</p>        <ul>            <li><span class='vocabulary'>Sobrino</span> - Nephew</li>            <li><span class='vocabulary'>Sobrina</span> - Niece</li>            <li><span class='vocabulary'>Primo</span> - Cousin (male)</li>            <li><span class='vocabulary'>Prima</span> - Cousin (female)</li>        </ul>        <h2>Using Family Vocabulary in Sentences</h2>        <p>When talking about family in Spanish, possessive pronouns are often used. For example:</p>        <ul>            <li><span class='vocabulary'>Mi madre</span> - My mother</li>            <li><span class='vocabulary'>Su hermano</span> - His/Her brother</li>        </ul>        <p>Practice using these terms to describe your own family and ask about others'.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-5-1", "word": "Madre", "translation": "Mother"},
-            {"id": "UUID-5-2", "word": "Padre", "translation": "Father"},
-            {"id": "UUID-5-3", "word": "Hermano", "translation": "Brother"},
-            {"id": "UUID-5-4", "word": "Hermana", "translation": "Sister"},
-            {"id": "UUID-5-5", "word": "Abuelo", "translation": "Grandfather"},
-            {"id": "UUID-5-6", "word": "Abuela", "translation": "Grandmother"},
-            {"id": "UUID-5-7", "word": "Tío", "translation": "Uncle"},
-            {"id": "UUID-5-8", "word": "Tía", "translation": "Aunt"}
+            {"id": "UUID-5-1", "word": "Madre", "phonetic": "MAH-dreh", "translation": "Mother"},
+            {"id": "UUID-5-2", "word": "Padre", "phonetic": "PAH-dreh", "translation": "Father"},
+            {"id": "UUID-5-3", "word": "Hermano", "phonetic": "er-MAH-noh", "translation": "Brother"},
+            {"id": "UUID-5-4", "word": "Hermana", "phonetic": "er-MAH-nah", "translation": "Sister"},
+            {"id": "UUID-5-5", "word": "Abuelo", "phonetic": "ah-BWAY-loh", "translation": "Grandfather"},
+            {"id": "UUID-5-6", "word": "Abuela", "phonetic": "ah-BWAY-lah", "translation": "Grandmother"},
+            {"id": "UUID-5-7", "word": "Tío", "phonetic": "TEE-oh", "translation": "Uncle"},
+            {"id": "UUID-5-8", "word": "Tía", "phonetic": "TEE-ah", "translation": "Aunt"}
         ],
         "quizQuestions": [
             {
@@ -348,14 +348,14 @@
         "name": "Food and Drink",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Food and Drink</h1>        <p>In this lesson, you'll learn vocabulary related to food and drinks in Spanish. This is useful for ordering at restaurants, shopping for groceries, and talking about meals.</p>        <h2>Basic Food Vocabulary</h2>        <p>Here are some common food-related terms in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Agua</span> - Water</li>            <li><span class='vocabulary'>Comida</span> - Food</li>            <li><span class='vocabulary'>Pan</span> - Bread</li>            <li><span class='vocabulary'>Fruta</span> - Fruit</li>            <li><span class='vocabulary'>Carne</span> - Meat</li>            <li><span class='vocabulary'>Verdura</span> - Vegetable</li>        </ul>        <h2>Common Drinks</h2>        <p>These are some popular drinks that you might encounter:</p>        <ul>            <li><span class='vocabulary'>Café</span> - Coffee</li>            <li><span class='vocabulary'>Té</span> - Tea</li>            <li><span class='vocabulary'>Jugo</span> - Juice</li>            <li><span class='vocabulary'>Leche</span> - Milk</li>        </ul>        <h2>Using Food Vocabulary in Sentences</h2>        <p>When talking about food and drinks, you might use phrases like:</p>        <ul>            <li><span class='vocabulary'>Quiero agua</span> - I want water.</li>            <li><span class='vocabulary'>Me gusta el pan</span> - I like bread.</li>        </ul>        <p>Practice ordering food and talking about meals to become more comfortable with this vocabulary.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-6-1", "word": "Agua", "translation": "Water"},
-            {"id": "UUID-6-2", "word": "Comida", "translation": "Food"},
-            {"id": "UUID-6-3", "word": "Pan", "translation": "Bread"},
-            {"id": "UUID-6-4", "word": "Fruta", "translation": "Fruit"},
-            {"id": "UUID-6-5", "word": "Carne", "translation": "Meat"},
-            {"id": "UUID-6-6", "word": "Verdura", "translation": "Vegetable"},
-            {"id": "UUID-6-7", "word": "Café", "translation": "Coffee"},
-            {"id": "UUID-6-8", "word": "Té", "translation": "Tea"}
+            {"id": "UUID-6-1", "word": "Agua", "phonetic": "AH-gwah", "translation": "Water"},
+            {"id": "UUID-6-2", "word": "Comida", "phonetic": "koh-MEE-dah", "translation": "Food"},
+            {"id": "UUID-6-3", "word": "Pan", "phonetic": "PAHN", "translation": "Bread"},
+            {"id": "UUID-6-4", "word": "Fruta", "phonetic": "FROO-tah", "translation": "Fruit"},
+            {"id": "UUID-6-5", "word": "Carne", "phonetic": "KAR-neh", "translation": "Meat"},
+            {"id": "UUID-6-6", "word": "Verdura", "phonetic": "ver-DOO-rah", "translation": "Vegetable"},
+            {"id": "UUID-6-7", "word": "Café", "phonetic": "kah-FAY", "translation": "Coffee"},
+            {"id": "UUID-6-8", "word": "Té", "phonetic": "TAY", "translation": "Tea"}
         ],
         "quizQuestions": [
             {
@@ -413,14 +413,14 @@
         "name": "Common Adjectives",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Common Adjectives</h1>        <p>In this lesson, you'll learn some common adjectives in Spanish. Adjectives help you describe people, places, and things, and they usually come after the noun in Spanish.</p>        <h2>Basic Adjectives</h2>        <p>Here are some frequently used adjectives in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Grande</span> - Big</li>            <li><span class='vocabulary'>Pequeño</span> - Small</li>            <li><span class='vocabulary'>Bonito</span> - Beautiful</li>            <li><span class='vocabulary'>Feo</span> - Ugly</li>            <li><span class='vocabulary'>Feliz</span> - Happy</li>            <li><span class='vocabulary'>Triste</span> - Sad</li>            <li><span class='vocabulary'>Interesante</span> - Interesting</li>            <li><span class='vocabulary'>Aburrido</span> - Boring</li>        </ul>        <h2>Using Adjectives in Sentences</h2>        <p>In Spanish, adjectives must agree with the gender and number of the nouns they describe. For example:</p>        <ul>            <li><span class='vocabulary'>El libro grande</span> - The big book</li>            <li><span class='vocabulary'>La casa bonita</span> - The beautiful house</li>        </ul>        <p>Try using these adjectives to describe objects around you or people you know. Practice making sure they agree with the noun's gender and number.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-7-1", "word": "Grande", "translation": "Big"},
-            {"id": "UUID-7-2", "word": "Pequeño", "translation": "Small"},
-            {"id": "UUID-7-3", "word": "Bonito", "translation": "Beautiful"},
-            {"id": "UUID-7-4", "word": "Feo", "translation": "Ugly"},
-            {"id": "UUID-7-5", "word": "Feliz", "translation": "Happy"},
-            {"id": "UUID-7-6", "word": "Triste", "translation": "Sad"},
-            {"id": "UUID-7-7", "word": "Interesante", "translation": "Interesting"},
-            {"id": "UUID-7-8", "word": "Aburrido", "translation": "Boring"}
+            {"id": "UUID-7-1", "word": "Grande", "phonetic": "GRAN-deh", "translation": "Big"},
+            {"id": "UUID-7-2", "word": "Pequeño", "phonetic": "peh-KEN-yoh", "translation": "Small"},
+            {"id": "UUID-7-3", "word": "Bonito", "phonetic": "boh-NEE-toh", "translation": "Beautiful"},
+            {"id": "UUID-7-4", "word": "Feo", "phonetic": "FEH-oh", "translation": "Ugly"},
+            {"id": "UUID-7-5", "word": "Feliz", "phonetic": "feh-LEEZ", "translation": "Happy"},
+            {"id": "UUID-7-6", "word": "Triste", "phonetic": "TREES-teh", "translation": "Sad"},
+            {"id": "UUID-7-7", "word": "Interesante", "phonetic": "een-teh-reh-SAN-teh", "translation": "Interesting"},
+            {"id": "UUID-7-8", "word": "Aburrido", "phonetic": "ah-boo-REE-doh", "translation": "Boring"}
         ],
         "quizQuestions": [
             {
@@ -478,13 +478,13 @@
         "name": "Days of the Week",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Days of the Week</h1>        <p>In this lesson, you'll learn the days of the week in Spanish. Knowing these is useful for talking about schedules, appointments, and daily activities.</p>        <h2>Days of the Week</h2>        <p>Here are the days of the week in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Lunes</span> - Monday</li>            <li><span class='vocabulary'>Martes</span> - Tuesday</li>            <li><span class='vocabulary'>Miércoles</span> - Wednesday</li>            <li><span class='vocabulary'>Jueves</span> - Thursday</li>            <li><span class='vocabulary'>Viernes</span> - Friday</li>            <li><span class='vocabulary'>Sábado</span> - Saturday</li>            <li><span class='vocabulary'>Domingo</span> - Sunday</li>        </ul>        <h2>Using Days of the Week in Sentences</h2>        <p>In Spanish, the days of the week are not capitalized. You can use them in phrases like:</p>        <ul>            <li><span class='vocabulary'>Hoy es lunes</span> - Today is Monday.</li>            <li><span class='vocabulary'>El viernes tengo una reunión</span> - On Friday, I have a meeting.</li>        </ul>        <p>Practice saying the days of the week out loud and using them in sentences about your weekly plans.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-8-1", "word": "Lunes", "translation": "Monday"},
-            {"id": "UUID-8-2", "word": "Martes", "translation": "Tuesday"},
-            {"id": "UUID-8-3", "word": "Miércoles", "translation": "Wednesday"},
-            {"id": "UUID-8-4", "word": "Jueves", "translation": "Thursday"},
-            {"id": "UUID-8-5", "word": "Viernes", "translation": "Friday"},
-            {"id": "UUID-8-6", "word": "Sábado", "translation": "Saturday"},
-            {"id": "UUID-8-7", "word": "Domingo", "translation": "Sunday"}
+            {"id": "UUID-8-1", "word": "Lunes", "phonetic": "LOO-nes", "translation": "Monday"},
+            {"id": "UUID-8-2", "word": "Martes", "phonetic": "MAR-tes", "translation": "Tuesday"},
+            {"id": "UUID-8-3", "word": "Miércoles", "phonetic": "mee-YER-koh-les", "translation": "Wednesday"},
+            {"id": "UUID-8-4", "word": "Jueves", "phonetic": "HWEH-ves", "translation": "Thursday"},
+            {"id": "UUID-8-5", "word": "Viernes", "phonetic": "VYER-nes", "translation": "Friday"},
+            {"id": "UUID-8-6", "word": "Sábado", "phonetic": "SAH-bah-doh", "translation": "Saturday"},
+            {"id": "UUID-8-7", "word": "Domingo", "phonetic": "doh-MEEN-goh", "translation": "Sunday"}
         ],
         "quizQuestions": [
             {
@@ -536,12 +536,12 @@
         "name": "Weather Vocabulary",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Weather Vocabulary</h1>        <p>In this lesson, you'll learn common weather-related vocabulary in Spanish. This is useful for talking about the weather, planning activities, and making small talk.</p>        <h2>Common Weather Phrases</h2>        <p>Here are some frequently used weather-related expressions in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Hace sol</span> - It's sunny</li>            <li><span class='vocabulary'>Hace frío</span> - It's cold</li>            <li><span class='vocabulary'>Está nublado</span> - It's cloudy</li>            <li><span class='vocabulary'>Llueve</span> - It's raining</li>            <li><span class='vocabulary'>Nieva</span> - It's snowing</li>            <li><span class='vocabulary'>Hace calor</span> - It's hot</li>        </ul>        <h2>Using Weather Vocabulary in Sentences</h2>        <p>To talk about the weather in Spanish, you can use phrases like:</p>        <ul>            <li><span class='vocabulary'>Hoy hace sol</span> - Today it's sunny.</li>            <li><span class='vocabulary'>Mañana va a llover</span> - Tomorrow it's going to rain.</li>        </ul>        <p>Practice describing the weather where you live and use these phrases in conversations about the day's conditions.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-9-1", "word": "Hace sol", "translation": "It's sunny"},
-            {"id": "UUID-9-2", "word": "Hace frío", "translation": "It's cold"},
-            {"id": "UUID-9-3", "word": "Está nublado", "translation": "It's cloudy"},
-            {"id": "UUID-9-4", "word": "Llueve", "translation": "It's raining"},
-            {"id": "UUID-9-5", "word": "Nieva", "translation": "It's snowing"},
-            {"id": "UUID-9-6", "word": "Hace calor", "translation": "It's hot"}
+            {"id": "UUID-9-1", "word": "Hace sol", "phonetic": "AH-seh sohl", "translation": "It's sunny"},
+            {"id": "UUID-9-2", "word": "Hace frío", "phonetic": "AH-seh FREE-oh", "translation": "It's cold"},
+            {"id": "UUID-9-3", "word": "Está nublado", "phonetic": "es-TAH noo-BLAH-doh", "translation": "It's cloudy"},
+            {"id": "UUID-9-4", "word": "Llueve", "phonetic": "YWEH-veh", "translation": "It's raining"},
+            {"id": "UUID-9-5", "word": "Nieva", "phonetic": "NYEH-vah", "translation": "It's snowing"},
+            {"id": "UUID-9-6", "word": "Hace calor", "phonetic": "AH-seh kah-LOHR", "translation": "It's hot"}
         ],
         "quizQuestions": [
             {
@@ -587,14 +587,14 @@
         "name": "Common Verbs",
         "lesson": "<html>    <head>        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>        <style>            body {                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;                margin: 16px;                line-height: 1.6;                font-size: 18px;            }            h1 {                font-size: 28px;                color: #333;            }            p {                font-size: 18px;                color: #666;            }            ul {                padding-left: 20px;            }            li {                margin-bottom: 8px;            }            .vocabulary {                color: #0056b3;                font-weight: bold;            }        </style>    </head>    <body>        <h1>Common Verbs</h1>        <p>In this lesson, you'll learn some common verbs in Spanish. Verbs are essential for constructing sentences and expressing actions, states, or occurrences.</p>        <h2>Basic Verbs</h2>        <p>Here are some of the most commonly used verbs in Spanish, along with their English translations:</p>        <ul>            <li><span class='vocabulary'>Ser</span> - To be (permanent)</li>            <li><span class='vocabulary'>Estar</span> - To be (temporary)</li>            <li><span class='vocabulary'>Tener</span> - To have</li>            <li><span class='vocabulary'>Hacer</span> - To do/make</li>            <li><span class='vocabulary'>Ir</span> - To go</li>            <li><span class='vocabulary'>Comer</span> - To eat</li>            <li><span class='vocabulary'>Beber</span> - To drink</li>            <li><span class='vocabulary'>Hablar</span> - To speak</li>        </ul>        <h2>Using Verbs in Sentences</h2>        <p>Here are examples of how to use some of these verbs in sentences:</p>        <ul>            <li><span class='vocabulary'>Yo soy estudiante</span> - I am a student. (using <span class='vocabulary'>ser</span> for a permanent state)</li>            <li><span class='vocabulary'>Estoy cansado</span> - I am tired. (using <span class='vocabulary'>estar</span> for a temporary state)</li>            <li><span class='vocabulary'>Ella va al mercado</span> - She goes to the market.</li>        </ul>        <p>Practice using these verbs in sentences about your daily routine and activities. Make sure to conjugate them according to the subject.</p>    </body></html>",
         "vocabulary": [
-            {"id": "UUID-10-1", "word": "Ser", "translation": "To be"},
-            {"id": "UUID-10-2", "word": "Estar", "translation": "To be"},
-            {"id": "UUID-10-3", "word": "Tener", "translation": "To have"},
-            {"id": "UUID-10-4", "word": "Hacer", "translation": "To do/make"},
-            {"id": "UUID-10-5", "word": "Ir", "translation": "To go"},
-            {"id": "UUID-10-6", "word": "Comer", "translation": "To eat"},
-            {"id": "UUID-10-7", "word": "Beber", "translation": "To drink"},
-            {"id": "UUID-10-8", "word": "Hablar", "translation": "To speak"}
+            {"id": "UUID-10-1", "word": "Ser", "phonetic": "SEHR", "translation": "To be"},
+            {"id": "UUID-10-2", "word": "Estar", "phonetic": "es-TAR", "translation": "To be"},
+            {"id": "UUID-10-3", "word": "Tener", "phonetic": "te-NEHR", "translation": "To have"},
+            {"id": "UUID-10-4", "word": "Hacer", "phonetic": "ah-SEHR", "translation": "To do/make"},
+            {"id": "UUID-10-5", "word": "Ir", "phonetic": "EER", "translation": "To go"},
+            {"id": "UUID-10-6", "word": "Comer", "phonetic": "koh-MEHR", "translation": "To eat"},
+            {"id": "UUID-10-7", "word": "Beber", "phonetic": "beh-BEHR", "translation": "To drink"},
+            {"id": "UUID-10-8", "word": "Hablar", "phonetic": "ah-BLAHR", "translation": "To speak"}
         ],
         "quizQuestions": [
             {

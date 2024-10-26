@@ -16,16 +16,19 @@ struct SampleData {
             VocabularyTerm(
                 id: "UUID-1-1",
                 word: "Hola",
+                phonetic: "HO-lah",
                 translation: "Hello"
             ),
             VocabularyTerm(
                 id: "UUID-1-2",
                 word: "Adiós",
+                phonetic: "ah-dee-OHS",
                 translation: "Goodbye"
             ),
             VocabularyTerm(
                 id: "UUID-1-3",
                 word: "Buenos días",
+                phonetic: "BWEH-nohs DEE-ahs",
                 translation: "Good morning"
             )
         ],

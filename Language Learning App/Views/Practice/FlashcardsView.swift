@@ -1,77 +1,77 @@
-//
-//  FlashcardsView.swift
-//  Language Learning App
-//
-//  Created by William Pendleton on 10/24/24.
-//
-
 import SwiftUI
 
 struct FlashcardsView: View {
     let topic: Topic
     @State private var shuffledTerms: [VocabularyTerm] = []
     @State private var currentIndex = 0
-    @State private var isFlipped = false
+    @State private var isFaceUp = true
+    
+    private let cardColor = Color.blue // Set your desired front color here
     
     var body: some View {
-        VStack {
-            if !shuffledTerms.isEmpty {
-                let term = shuffledTerms[currentIndex]
-                
-                Text(isFlipped ? term.translation : term.word)
-                    .font(.largeTitle)
-                    .padding()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .rotation3DEffect(
-                        .degrees(isFlipped ? 180 : 0),
-                        axis: (x: 0, y: 1, z: 0)
-                    )
-                    .onTapGesture {
-                        withAnimation {
-                            isFlipped.toggle()
-                        }
-                    }
-                
-                HStack {
-                    Button("Previous") {
-                        if currentIndex > 0 {
-                            currentIndex -= 1
-                            isFlipped = false
-                        }
-                    }
-                    .disabled(currentIndex == 0)
+        GeometryReader { geometry in
+            VStack(alignment: .center) {
+                if !shuffledTerms.isEmpty {
+                    CardView(term: shuffledTerms[currentIndex], cardColor: cardColor, isFaceUp: $isFaceUp)
+                        .padding(40)
                     
-                    Spacer()
-                    
-                    Button("Next") {
-                        if currentIndex < shuffledTerms.count - 1 {
-                            currentIndex += 1
-                            isFlipped = false
-                        } else {
-                            // Mark flashcards as completed
-                            ProgressManager.shared.setFlashcardsCompleted(true, for: topic.id)
+                    // Progress Indicator
+                    HStack {
+                        ForEach(0..<shuffledTerms.count, id: \.self) { index in
+                            Circle()
+                                .fill(index == currentIndex ? Color.blue : Color.gray)
+                                .frame(width: 10, height: 10)
                         }
                     }
+                    .padding(.bottom, 20)
+                    
+                    HStack {
+                        // Previous Button
+                        Button("Previous") {
+                            if currentIndex > 0 {
+                                currentIndex -= 1
+                            }
+                            isFaceUp = true
+                        }
+                        .disabled(currentIndex == 0)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        // Shuffle Button - Centered
+                        Button("Shuffle") {
+                            shuffledTerms.shuffle()
+                            isFaceUp = true
+                            currentIndex = 0
+                        }
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        
+                        // Next Button
+                        Button("Next") {
+                            if currentIndex < shuffledTerms.count - 1 {
+                                currentIndex += 1
+                                isFaceUp = true
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                    .padding(.horizontal)
+
+                } else {
+                    Text("No vocabulary terms available.")
+                        .font(.title)
+                        .foregroundColor(.gray)
                 }
-                .padding()
-            } else {
-                Text("No vocabulary terms available.")
             }
-        }
-        .onAppear {
-            shuffledTerms = topic.vocabulary.shuffled()
-            currentIndex = 0
-            isFlipped = false
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Toggle(isOn: ProgressManager.shared.flashcardsBinding(for: topic.id)) {
-                    Text("Completed")
-                }.toggleStyle(.switch)
+            .onAppear {
+                shuffledTerms = topic.vocabulary.shuffled()
+                currentIndex = 0
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Toggle(isOn: ProgressManager.shared.flashcardsBinding(for: topic.id)) {
+                        Text("Completed")
+                    }.toggleStyle(.switch)
+                }
             }
         }
     }
