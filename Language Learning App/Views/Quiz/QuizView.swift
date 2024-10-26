@@ -51,11 +51,8 @@ struct QuizView: View {
             
             VStack(alignment: .leading, spacing: 15) {
                 Text("📝 **Question Types:** You'll face a mix of **multiple-choice** and **free-response** questions.")
-                    .bold()
                 Text("⏱️ **Timing:** Each question is timed. The faster you answer, the higher your score!")
-                    .bold()
                 Text("🏆 **Scoring:** Earn up to **10 points** per question, plus a **speed bonus** for quick answers.")
-                    .bold()
                 Text("✅ Answer all of the questions correctly to complete the quiz!")
                     .bold()
             }
@@ -82,7 +79,7 @@ struct QuizView: View {
     private var quizContent: some View {
         VStack {
             if viewModel.currentQuestionIndex < viewModel.topic.quizQuestions.count {
-                let question = viewModel.topic.quizQuestions[viewModel.currentQuestionIndex]
+                let question = viewModel.shuffledQuestions[viewModel.currentQuestionIndex]
                 
                 Text(question.question)
                     .font(.headline)
@@ -120,7 +117,7 @@ struct QuizView: View {
                         .padding(.bottom, 20)
                     
                     if !viewModel.isCorrectAnswer {
-                        Text("Correct Answer: \(question.correctAnswer)")
+                        Text("**Correct Answer**: \(question.correctAnswer)")
                             .padding(.bottom, 20)
                     }
                     
@@ -140,16 +137,11 @@ struct QuizView: View {
                     .padding()
                     .accentColor(.blue)
             } else {
-                Group {
-                    if viewModel.didCompleteQuiz {
-                        Text("Quiz Completed!")
-                            .font(.largeTitle)
-                            .padding()
-                    } else {
-                        Text("Try Again!")
-                            .font(.largeTitle)
-                            .padding()
-                    }
+                // Quiz Completed Section
+                VStack {
+                    Text(viewModel.didCompleteQuiz ? "Quiz Completed!" : "Try Again!")
+                        .font(.largeTitle)
+                        .padding()
                     
                     Text("Correct Answers \(viewModel.correctAnswerCount) / \(viewModel.topic.quizQuestions.count)")
                         .font(.title)
@@ -159,8 +151,39 @@ struct QuizView: View {
                         .font(.title)
                         .padding()
                     
-                    Button("Finish") {
-                        // Handle quiz completion action
+                    // Conditional Try Again / Finish Button
+                    Button(action: {
+                        if viewModel.didCompleteQuiz {
+                            // Handle finish action
+                            viewModel.resetQuiz()
+                        } else {
+                            // Handle try again action
+                            viewModel.resetQuiz()
+                            viewModel.startQuiz = true
+                            viewModel.startTimer()
+                        }
+                    }) {
+                        Text(viewModel.didCompleteQuiz ? "Finish" : "Try Again")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(viewModel.didCompleteQuiz ? Color.green : Color.blue)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
+                    
+                    // Show "Go Back" button if "Try Again" is displayed
+                    if !viewModel.didCompleteQuiz {
+                        Button("Go Back") {
+                            // Handle go back action, e.g., navigating to a previous view
+                        }
+                        .buttonStyle(BorderlessButtonStyle())
+                        .font(.headline)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .cornerRadius(10)
+                        .padding(.horizontal)
                     }
                 }
                 .displayConfetti(isActive: $viewModel.showConfetti)

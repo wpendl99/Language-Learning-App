@@ -24,6 +24,12 @@ class QuizViewModel: ObservableObject {
     @Published var showGlow = false
     @Published var glowColor: Color = .clear
     @Published var shuffledOptions: [String] = []
+    @Published var shuffledQuestions: [QuizQuestion]
+    
+    private(set) var highScore: Int {
+        get { ProgressManager.shared.highScore(for: topic.id) }
+        set { ProgressManager.shared.setHighScore(newValue, for: topic.id) }
+    }
     
     var topic: Topic
     private var timer: Timer?
@@ -31,7 +37,16 @@ class QuizViewModel: ObservableObject {
     
     init(topic: Topic) {
         self.topic = topic
+        self.shuffledQuestions = topic.quizQuestions.shuffled()
+        setupCurrentQuestion()
     }
+    
+    private func setupCurrentQuestion() {
+            if currentQuestionIndex < shuffledQuestions.count {
+                let question = shuffledQuestions[currentQuestionIndex]
+                shuffledOptions = question.options?.shuffled() ?? []
+            }
+        }
     
     func startTimer() {
         stopTimer()
@@ -54,7 +69,7 @@ class QuizViewModel: ObservableObject {
         stopTimer()
         answerSubmitted = true
         
-        let question = topic.quizQuestions[currentQuestionIndex]
+        let question = shuffledQuestions[currentQuestionIndex]
         let correctAnswer = question.correctAnswer.normalized().trimmingCharacters(in: .whitespacesAndNewlines)
         let userResponse = userAnswer.normalized().trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -95,12 +110,12 @@ class QuizViewModel: ObservableObject {
         selectedOption = ""
         userAnswer = ""
         isCorrectAnswer = false
-        if currentQuestionIndex < topic.quizQuestions.count {
-            let question = topic.quizQuestions[currentQuestionIndex]
-            shuffledOptions = question.options?.shuffled() ?? []
+        
+        if currentQuestionIndex < shuffledQuestions.count {
+            setupCurrentQuestion()
             startTimer()
         } else {
-            if correctAnswerCount == topic.quizQuestions.count {
+            if correctAnswerCount == shuffledQuestions.count {
                 ProgressManager.shared.setQuizCompleted(true, for: topic.id)
                 didCompleteQuiz = true
                 showConfetti = true
@@ -117,12 +132,15 @@ class QuizViewModel: ObservableObject {
         score = 0
         currentQuestionIndex = 0
         elapsedTime = 0
+        correctAnswerCount = 0
         answerSubmitted = false
         selectedOption = ""
         userAnswer = ""
         isCorrectAnswer = false
         startQuiz = false
         shuffledOptions = []
+        shuffledQuestions = topic.quizQuestions.shuffled()
+        setupCurrentQuestion()
     }
     
     func triggerGlowEffect(isCorrect: Bool) {
