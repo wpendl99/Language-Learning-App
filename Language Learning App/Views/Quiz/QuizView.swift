@@ -139,17 +139,19 @@ struct QuizView: View {
             } else {
                 // Quiz Completed Section
                 VStack {
-                    Text(viewModel.didCompleteQuiz ? "Quiz Completed!" : "Try Again!")
+                    Text(viewModel.didCompleteQuiz ? "Quiz Completed!" : "Try Again...")
                         .font(.largeTitle)
                         .padding()
                     
-                    Text("Correct Answers \(viewModel.correctAnswerCount) / \(viewModel.topic.quizQuestions.count)")
-                        .font(.title)
-                        .padding()
+                    Text("**Correct Answers**: \(viewModel.correctAnswerCount) / \(viewModel.topic.quizQuestions.count)")
+                        .font(.title2)
                     
-                    Text("Your Score: \(viewModel.score)")
-                        .font(.title)
-                        .padding()
+                    Text("**Your Score**: \(viewModel.score)")
+                        .font(.title2)
+                    
+                    Text("High Score: \(viewModel.highScore)")
+                        .font(.subheadline)
+                        .padding(.bottom)
                     
                     // Conditional Try Again / Finish Button
                     Button(action: {

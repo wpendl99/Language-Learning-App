@@ -40,6 +40,10 @@ struct TopicDetailView: View {
                 )
             }
             
+            Text("High Score: \(progressManager.highScore(for: topic.id))")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            
             Spacer()
         }
         .navigationBarTitleDisplayMode(.inline)
