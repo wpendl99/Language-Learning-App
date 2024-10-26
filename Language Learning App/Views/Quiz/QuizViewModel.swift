@@ -23,6 +23,7 @@ class QuizViewModel: ObservableObject {
     @Published var didCompleteQuiz: Bool = false
     @Published var showGlow = false
     @Published var glowColor: Color = .clear
+    @Published var shuffledOptions: [String] = []
     
     var topic: Topic
     private var timer: Timer?
@@ -54,7 +55,8 @@ class QuizViewModel: ObservableObject {
         answerSubmitted = true
         
         let question = topic.quizQuestions[currentQuestionIndex]
-        let correctAnswer = question.correctAnswer.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        let correctAnswer = question.correctAnswer.normalized().trimmingCharacters(in: .whitespacesAndNewlines)
+        let userResponse = userAnswer.normalized().trimmingCharacters(in: .whitespacesAndNewlines)
         
         if timeout {
             isCorrectAnswer = false
@@ -65,10 +67,12 @@ class QuizViewModel: ObservableObject {
         
         if let _ = question.options {
             // Multiple Choice or True/False
-            isCorrectAnswer = selectedOption.lowercased() == correctAnswer
+            isCorrectAnswer = selectedOption.normalized() == correctAnswer
         } else {
             // Fill in the Blank
-            isCorrectAnswer = userAnswer.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) == correctAnswer
+            let distance = userResponse.levenshteinDistance(to: correctAnswer)
+            let threshold = Int(Double(correctAnswer.count) * 0.3) // Allow 30% character difference
+            isCorrectAnswer = distance <= threshold
         }
         
         if isCorrectAnswer {
@@ -92,6 +96,8 @@ class QuizViewModel: ObservableObject {
         userAnswer = ""
         isCorrectAnswer = false
         if currentQuestionIndex < topic.quizQuestions.count {
+            let question = topic.quizQuestions[currentQuestionIndex]
+            shuffledOptions = question.options?.shuffled() ?? []
             startTimer()
         } else {
             if correctAnswerCount == topic.quizQuestions.count {
@@ -116,6 +122,7 @@ class QuizViewModel: ObservableObject {
         userAnswer = ""
         isCorrectAnswer = false
         startQuiz = false
+        shuffledOptions = []
     }
     
     func triggerGlowEffect(isCorrect: Bool) {

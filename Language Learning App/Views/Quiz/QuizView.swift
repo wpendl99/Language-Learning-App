@@ -88,8 +88,8 @@ struct QuizView: View {
                     .font(.headline)
                     .padding()
                 
-                if let options = question.options {
-                    ForEach(options, id: \.self) { option in
+                if let _ = question.options {
+                    ForEach(viewModel.shuffledOptions, id: \.self) { option in
                         Button(action: {
                             viewModel.selectedOption = option
                             viewModel.checkAnswer()
