@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E47731502CCA3B62002A35F1 /* Language Learning App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Language Learning App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47731502CCA3B62002A35F1 /* Study Spanish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Spanish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		E47731512CCA3B62002A35F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E47731502CCA3B62002A35F1 /* Language Learning App.app */,
+				E47731502CCA3B62002A35F1 /* Study Spanish.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E477314F2CCA3B62002A35F1 /* Language Learning App */ = {
+		E477314F2CCA3B62002A35F1 /* Study Spanish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E477315E2CCA3B64002A35F1 /* Build configuration list for PBXNativeTarget "Language Learning App" */;
+			buildConfigurationList = E477315E2CCA3B64002A35F1 /* Build configuration list for PBXNativeTarget "Study Spanish" */;
 			buildPhases = (
 				E477314C2CCA3B62002A35F1 /* Sources */,
 				E477314D2CCA3B62002A35F1 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				E47731522CCA3B62002A35F1 /* Language Learning App */,
 			);
-			name = "Language Learning App";
+			name = "Study Spanish";
 			packageProductDependencies = (
 			);
 			productName = "Language Learning App";
-			productReference = E47731502CCA3B62002A35F1 /* Language Learning App.app */;
+			productReference = E47731502CCA3B62002A35F1 /* Study Spanish.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E477314B2CCA3B62002A35F1 /* Build configuration list for PBXProject "Language Learning App" */;
+			buildConfigurationList = E477314B2CCA3B62002A35F1 /* Build configuration list for PBXProject "Study Spanish" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E477314F2CCA3B62002A35F1 /* Language Learning App */,
+				E477314F2CCA3B62002A35F1 /* Study Spanish */,
 			);
 		};
 /* End PBXProject section */
@@ -252,10 +252,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Language Learning App/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X8HW5SNZ96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Study Spanish";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,10 +283,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Language Learning App/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X8HW5SNZ96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Study Spanish";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E477314B2CCA3B62002A35F1 /* Build configuration list for PBXProject "Language Learning App" */ = {
+		E477314B2CCA3B62002A35F1 /* Build configuration list for PBXProject "Study Spanish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E477315C2CCA3B64002A35F1 /* Debug */,
@@ -316,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E477315E2CCA3B64002A35F1 /* Build configuration list for PBXNativeTarget "Language Learning App" */ = {
+		E477315E2CCA3B64002A35F1 /* Build configuration list for PBXNativeTarget "Study Spanish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E477315F2CCA3B64002A35F1 /* Debug */,
