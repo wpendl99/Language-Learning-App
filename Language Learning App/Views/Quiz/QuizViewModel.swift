@@ -123,6 +123,7 @@ class QuizViewModel: ObservableObject {
             setupCurrentQuestion()
             startTimer()
         } else {
+            showResult = true
             if correctAnswerCount == shuffledQuestions.count {
                 ProgressManager.shared.setQuizCompleted(true, for: topic.id)
                 didCompleteQuiz = true
@@ -146,6 +147,7 @@ class QuizViewModel: ObservableObject {
         userAnswer = ""
         isCorrectAnswer = false
         startQuiz = false
+        showResult = false
         shuffledOptions = []
         shuffledQuestions = topic.quizQuestions.shuffled()
         setupCurrentQuestion()

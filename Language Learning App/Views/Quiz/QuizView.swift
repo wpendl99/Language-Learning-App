@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuizView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject var viewModel: QuizViewModel
     
     var body: some View {
@@ -21,6 +22,12 @@ struct QuizView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                if (viewModel.startQuiz && !viewModel.showResult) {
+                    ToolbarItem(placement: .principal) {
+                        Text("Your Score: \(viewModel.score)")
+                    }
+                }
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if !viewModel.startQuiz || viewModel.showResult {
                         Text("Quiz Completed: \(ProgressManager.shared.isQuizCompleted(for: viewModel.topic.id) ? "✅" : "❌")")
@@ -161,6 +168,7 @@ struct QuizView: View {
                         if viewModel.didCompleteQuiz {
                             // Handle finish action
                             viewModel.resetQuiz()
+                            self.presentationMode.wrappedValue.dismiss()
                         } else {
                             // Handle try again action
                             viewModel.resetQuiz()
@@ -181,7 +189,7 @@ struct QuizView: View {
                     // Show "Go Back" button if "Try Again" is displayed
                     if !viewModel.didCompleteQuiz {
                         Button("Go Back") {
-                            // Handle go back action, e.g., navigating to a previous view
+                            self.presentationMode.wrappedValue.dismiss()
                         }
                         .buttonStyle(BorderlessButtonStyle())
                         .font(.headline)
