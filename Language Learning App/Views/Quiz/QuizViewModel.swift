@@ -26,6 +26,14 @@ class QuizViewModel: ObservableObject {
     @Published var shuffledOptions: [String] = []
     @Published var shuffledQuestions: [QuizQuestion]
     
+    var flippedProgress: Double {
+        return max(20 - elapsedTime, 0)
+    }
+    
+    var flashOpacity: Double {
+        return flippedProgress < 5 ? 0.5 : 1.0
+    }
+    
     private(set) var highScore: Int {
         get { ProgressManager.shared.highScore(for: topic.id) }
         set { ProgressManager.shared.setHighScore(newValue, for: topic.id) }

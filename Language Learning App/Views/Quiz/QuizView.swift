@@ -133,9 +133,12 @@ struct QuizView: View {
                     }
                 }
                 
-                ProgressView(value: viewModel.elapsedTime, total: 20)
+                ProgressView(value: viewModel.flippedProgress, total: 20)
                     .padding()
-                    .accentColor(.blue)
+                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                    .accentColor(viewModel.flippedProgress < 5 ? Color.red : Color.blue)
+                    .opacity(viewModel.flippedProgress < 5 ? viewModel.flashOpacity : 1.0)
+                    .animation(.easeInOut(duration: 0.5).repeatForever(), value: (viewModel.flippedProgress < 5))
             } else {
                 // Quiz Completed Section
                 VStack {
