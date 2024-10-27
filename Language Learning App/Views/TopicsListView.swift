@@ -29,7 +29,7 @@ struct TopicsListView: View {
                     }
                 }
             }
-            .navigationTitle("Language Topics")
+            .navigationTitle("Study Spanish Topics")
         }
     }
 }
