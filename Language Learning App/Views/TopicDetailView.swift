@@ -10,6 +10,9 @@ import SwiftUI
 struct TopicDetailView: View {
     @ObservedObject var progressManager = ProgressManager.shared
     @State var topic: Topic
+    @State private var showResetTopicQuizAlert = false
+    @State private var showResetAllProgressAlert = false
+
     
     var body: some View {
         VStack(spacing: 20) {
@@ -45,6 +48,36 @@ struct TopicDetailView: View {
                 .foregroundStyle(.secondary)
             
             Spacer()
+                        
+            Button("Reset Quiz Progress", role: .destructive) {
+                showResetTopicQuizAlert = true
+            }
+            .buttonStyle(.bordered)
+            .alert(isPresented: $showResetTopicQuizAlert) {
+                Alert(
+                    title: Text("Reset Topic Quiz Progress"),
+                    message: Text("Are you sure you want to reset the quiz progress and high score for \(topic.name)?"),
+                    primaryButton: .destructive(Text("Reset")) {
+                        progressManager.resetQuizProgress(for: topic.id)
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
+            
+            Button("Reset All Topic Progress", role: .destructive) {
+                showResetAllProgressAlert = true
+            }
+            .buttonStyle(.borderedProminent)
+            .alert(isPresented: $showResetAllProgressAlert) {
+                Alert(
+                    title: Text("Reset All Topic Progress"),
+                    message: Text("Are you sure you want to reset all progress, including quizzes, lessons, and flashcards for this topic?"),
+                    primaryButton: .destructive(Text("Reset All")) {
+                        progressManager.resetTopicProgress(for: topic.id)
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
         }
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {

@@ -103,7 +103,17 @@ class ProgressManager:ObservableObject {
     
     // MARK: - Reset Progress
     
-    func resetProgress(for topicId: String) {
+    func resetQuizProgress(for topicId: String) {
+        let keys = [
+            key(for: "isQuizCompleted", topicId: topicId),
+            key(for: "highScore", topicId: topicId)
+        ]
+        for key in keys {
+            userDefaults.removeObject(forKey: key)
+        }
+    }
+    
+    func resetTopicProgress(for topicId: String) {
         let keys = [
             key(for: "isLessonRead", topicId: topicId),
             key(for: "isFlashcardsCompleted", topicId: topicId),
@@ -117,7 +127,7 @@ class ProgressManager:ObservableObject {
     
     func resetAllProgress(topicIds: [String]) {
         for topicId in topicIds {
-            resetProgress(for: topicId)
+            resetTopicProgress(for: topicId)
         }
     }
 }
