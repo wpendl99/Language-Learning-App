@@ -10,6 +10,7 @@ import SwiftUI
 struct TopicDetailView: View {
     @ObservedObject var progressManager = ProgressManager.shared
     @State var topic: Topic
+    @Binding var didChangeFlag: Bool
     @State private var showResetTopicQuizAlert = false
     @State private var showResetAllProgressAlert = false
 
@@ -83,6 +84,7 @@ struct TopicDetailView: View {
         .onAppear {
             if progressManager.didChangeFlag {
                 progressManager.resetDidChangeFlag()
+                didChangeFlag = true
             }
         }
     }
@@ -112,5 +114,5 @@ struct OptionButton: View {
 }
 
 #Preview {
-    TopicDetailView(topic: SampleData.sampleTopic)
+    TopicDetailView(topic: SampleData.sampleTopic, didChangeFlag: .constant(false))
 }

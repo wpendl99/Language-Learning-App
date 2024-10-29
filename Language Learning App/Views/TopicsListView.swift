@@ -9,12 +9,13 @@ import SwiftUI
 
 struct TopicsListView: View {
     @ObservedObject var dataManager = DataManager()
+    @State var didChangeFlag: Bool = false
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(dataManager.topics) { topic in
-                    NavigationLink(destination: TopicDetailView(topic: topic)) {
+                    NavigationLink(destination: TopicDetailView(topic: topic, didChangeFlag: $didChangeFlag)) {
                         HStack {
                             Text(topic.name)
                                 .font(.headline)
@@ -30,6 +31,17 @@ struct TopicsListView: View {
                 }
             }
             .navigationTitle("Study Spanish Topics")
+            .onAppear {
+                if didChangeFlag {
+                    didChangeFlag = false
+                    // Refresh view
+                    #if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
+                    DispatchQueue.main.async {
+                        self.dataManager.loadTopics()
+                    }
+                    #endif
+                }
+            }
         }
     }
 }
