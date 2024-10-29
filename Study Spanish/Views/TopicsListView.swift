@@ -43,6 +43,7 @@ struct TopicsListView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
