@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E47731522CCA3B62002A35F1 /* Language Learning App */ = {
+		E47731522CCA3B62002A35F1 /* Study Spanish */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Language Learning App";
+			path = "Study Spanish";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		E47731472CCA3B62002A35F1 = {
 			isa = PBXGroup;
 			children = (
-				E47731522CCA3B62002A35F1 /* Language Learning App */,
+				E47731522CCA3B62002A35F1 /* Study Spanish */,
 				E47731512CCA3B62002A35F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E47731522CCA3B62002A35F1 /* Language Learning App */,
+				E47731522CCA3B62002A35F1 /* Study Spanish */,
 			);
 			name = "Study Spanish";
 			packageProductDependencies = (
@@ -251,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Language Learning App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Study Spanish/Preview Content\"";
 				DEVELOPMENT_TEAM = X8HW5SNZ96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -282,7 +282,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Language Learning App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Study Spanish/Preview Content\"";
 				DEVELOPMENT_TEAM = X8HW5SNZ96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
