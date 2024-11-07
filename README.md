@@ -1,6 +1,6 @@
 # Study Spanish Support
 
-[<img src="./Study Spanish/Assets/Assets.xcassets/AppIcon.appiconset/StudySpanish Icon.png" width="250"/>](./Study%20Spanish/Assets/Assets.xcassets/AppIcon.appiconset/StudySpanish%20Icon.png)
+[<img src="./Study Spanish/Assets/Assets.xcassets/AppIcon.appiconset/Study Spanish Icon.png" width="250"/>](./Study%20Spanish/Assets/Assets.xcassets/AppIcon.appiconset/StudySpanish%20Icon.png)
 
 Welcome to the support page for **Study Spanish**! We’re here to help you make the most of your Spanish learning journey with our app. Below, you'll find helpful information about the app, how to use its features, and ways to get in touch with us.
 
